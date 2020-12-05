@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  * {
+    box-sizing: border-box;
+    padding:20px;
+  }
+
+h1{
+  margin-left: 43%;
+  font-family: Georgia, serif;
+  font-size:3vw;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: underline solid rgb(68, 68, 68);
+
+}
+
+p{
+  margin-top: -50px;
+  margin-left: 33%;
+  font-family: Georgia, serif;
+  font-size:2vw;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: underline solid rgb(68, 68, 68);
+}
+
+body {
+background-image: url("img/background-singup.jpg");
+background-size:cover;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+input[type=text],input[type=password],input[type=number],input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  resize: vertical;
+  background: #f1f1f1;
+
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: underline solid rgb(68, 68, 68);
+
+}
+
+input[type=submit] {
+
+  background-color: #335d87;
+  font-family: Georgia, serif;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-left : 90%;
+    margin-top: 20px;
+  	border-radius: 12px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    float: right;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  margin-left: 25%;
+  background-color:#071829;
+  padding: 10px;
+  width: 50%;
+  padding-top: 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+  margin-bottom: -35px;
+}
+
+.col-75 {
+  float: left;
+  width: 95%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  margin-top: -50px;
+}
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+}
+
+</style>
+
+		<!-- javascript js -->
+
+	<script src="js/jquery.js"></script>
+</head>
+
+		<body>
+  <h1>Sign Up</h1>
+  <p>Tolong isi form pendaftaran ini.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Username</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Masukkan Username anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" placeholder="Masukkan Password anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Masukkan Email anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nama depan</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Masukkan Nama Depan anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nama Belakang</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Masukkan Nama Belakang anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Alamat</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Masukkan Alamat anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Umur</label>
+      </div>
+      <div class="col-75">
+        <input type="number" placeholder="Masukkan Umur anda" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nomor</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" placeholder="Masukkan Nomor Telepon anda"  pattern="[0-9]{12}" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Submit" >
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Daftar Pengajar"
+      style="background:transparent; border-style: inset; font-family: verdana" >
+    </div>
+
+  </form>
+</div>
+
+<script> $(function(){
+  $('a#logout').click(function(){
+   if(confirm("Are you sure want to logout?")) {
+    return true;
+   }
+    return false;
+   });
+  });
+</script>
+
+</body>
+</html>

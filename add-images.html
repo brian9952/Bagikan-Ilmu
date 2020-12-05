@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+  h2 {
+    font-family: georgia, serif;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: -50px;
+    color: #fff;
+  }
+
+  p{
+    font-family: Georgia, serif;
+    font-size: 3vw;
+    text-align: center;
+      color: #fff;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding:20px;
+  }
+
+body {
+  font-family: Georgia, serif;
+  background-image: url("img/background-singup.jpg");
+   background-size: cover;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  resize: vertical;
+  background: #f1f1f1;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #105670;
+    border: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left : 900px;
+    margin-bottom: 20px;
+  	border-radius: 12px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:#071829;
+  padding: 20px;
+  width: 50%;
+  align-content: center;
+  margin-left: 25%;
+  height: 600px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  clear: both;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+
+</head>
+		<body>
+
+  <h2>Add Images</h2>
+  <p>Please fill this form to add new images.</p>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <img src="img/background-signup2.jpg" class="responsive" width="600" height="400">
+          <div class="row">
+            <input type="submit" value="Upload Photo" >
+          </div>
+            <div class="row">
+              <input type="submit" value="Submit" >
+            </div>
+      </form>
+    </div>
+
+    </body>
+</html>
