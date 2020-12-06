@@ -39,7 +39,7 @@ background-size:cover;
 
 }
 
-input[type=text],input[type=password],input[type=number], input[type=tel],select, textarea {
+input[type=text],input[type=password],input[type=number], input[type=tel],select{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -50,7 +50,7 @@ input[type=text],input[type=password],input[type=number], input[type=tel],select
 
 }
 
-input[type=textarea]{
+textarea{
   width: 100%;
   height: 150px;
   padding: 12px;
@@ -59,7 +59,7 @@ input[type=textarea]{
   display: inline-block;
   resize: vertical;
   background: #f1f1f1;
-
+  font-family: verdana;
 }
 
 label {
@@ -145,60 +145,48 @@ input[type=submit]:hover {
 
 		<body>
 
-  <h1>Sign Up</h1>
-  <p>Tolong isi form pendaftaran ini.</p>
+  <h1>Buat Kelas</h1>
+  <p>Tolong isi form pembuatan kelas ini.</p>
 
 <div class="container">
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname">Nama Bisnis Anda</label>
+        <label for="fname">Nama Kelas</label>
       </div>
       <div class="col-75">
-        <input type="text" placeholder="Masukkan Nama Bisnis Anda" required>
+        <input type="text" placeholder="Masukkan Nama Kelas" required>
       </div>
     </div>
 
     <div class="row">
       <div class="col-25">
-        <label for="fname">Alamat Nama Bisnis Anda</label>
+        <label for="fname">Jumlah materi</label>
       </div>
       <div class="col-75">
-        <input type="password" placeholder="Masukkan Alamat Bisnis Anda" required>
+        <input type="number" placeholder="Masukkan Jumlah Materi Anda" required>
       </div>
     </div>
 
     <div class="row">
       <div class="col-25">
-        <label for="fname">Bidang Usaha</label>
+        <label for="fname">Deskripsi Kelas</label>
       </div>
       <div class="col-75">
-        <input type="text" placeholder="Masukkan Bidang Usaha Anda" required>
+        <textarea placeholder="Deskripsikan Kelas Anda" required></textarea>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">Nomor Telepon Bisnis</label>
-      </div>
-      <div class="col-75">
-        <input type="tel" placeholder="Masukkan Nomor Telepon Bisnis Anda"
-         pattern="[0-9]{12}" required>
-      </div>
-    </div>
+    <form action="/action_page.php">
+      <img src="img/background-signup2.jpg" class="responsive" width="100%" height="100%">
+        <div class="row">
+          <input type="submit" value="Upload Foto Kelas" >
+        </div>
+          <div class="row">
+            <input type="submit" value="Submit" >
+          </div>
+    </form>
 
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">Deskripsi Bisnis</label>
-      </div>
-      <div class="col-75">
-        <input type="textarea" placeholder="Deskripsikan Bisnis Anda" required>
-      </div>
-    </div>
-
-    <div class="row">
-      <input type="submit" value="Submit" >
-    </div>
   </form>
 </div>
 

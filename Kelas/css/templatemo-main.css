@@ -292,19 +292,19 @@ nav a:hover::before {
   background-size:cover;
 }
 .slides .slide:nth-child(2) {
-  background-image: url(../img/second_bg.jpg);
+  background-image: url(../img/docker.jpg);
 }
 .slides .slide:nth-child(3) {
-  background-image: url(../img/third_bg.jpg);
+  background-image: url(../img/docker.jpg);
 }
 .slides .slide:nth-child(4) {
-  background-image: url(../img/fourth_bg.jpg);
+  background-image: url(../img/docker.jpg);
  }
 .slides .slide:nth-child(5) {
-  background-image: url(../img/fifth_bg.jpg);
+  background-image: url(../img/docker.jpg);
 }
 .slides .slide:nth-child(6) {
-  background-image: url(../img/fourth_bg.jpg);
+  background-image: url(../img/docker.jpg);
 }
 .slides .slide img {
   width: 100%;
@@ -348,7 +348,6 @@ nav a:hover::before {
 .first-content p {
 	color: #fff;
 	font-size: 13px;
-	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 2px;
 	line-height: 26px;
@@ -533,87 +532,6 @@ nav a:hover::before {
 	margin: 0px;
 	padding: 0px;
 }
-
-
-.fourth-content {
-	padding: 5px;
-}
-
-.fourth-content .container-fluid {
-	padding-right: 15px;
-	padding-left: 15px;
-}
-
-.fourth-content .container-fluid .col-md-4 {
-	padding-right: 0px;
-	padding-left: 0px;
-}
-
-.fourth-content .item {
-	margin: 10px;
-}
-
-.fourth-content .item img {
-	max-width: 100%;
-	overflow: hidden;
-}
-
-.fourth-content .item .thumb {
-	position: relative;
-}
-
-.fourth-content .item .hover-effect {
-	text-align: left;
-	position: absolute;
-	color: #fff;
-	background-color: rgba(0,0,0,0.95);
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.8s;
-}
-
-.fourth-content .item:hover .hover-effect {
-	opacity: 1;
-	visibility: visible;
-}
-
-.fourth-content .item .hover-effect .hover-content {
-	transform: translateY(-50%);
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    padding: 30px;
-}
-
-.fourth-content .item .hover-effect h2 {
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: 0.5px;
-	border-bottom: 1px solid #fff;
-	display: inline-block;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	margin-top: 0px;
-}
-
-.fourth-content .item .hover-effect p {
-	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	line-height: 22px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-}
-
-
 
 .fifth-content .container-fluid {
 	padding-left: 0px;
