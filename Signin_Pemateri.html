@@ -140,6 +140,19 @@ input[type=submit]:hover {
 		<!-- javascript js -->
 
 	<script src="js/jquery.js"></script>
+  <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "449ead1e-03fa-4ae2-a06d-5222c40868e1",
+    region: "us-south",
+    serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
+    onLoad: function(instance) { instance.render(); }
+        };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
 </head>
 
 		<body>
@@ -208,6 +221,19 @@ input[type=submit]:hover {
    }
     return false;
    });
+  });
+</script>
+<script>
+window.watsonAssistantChatOptions = {
+  integrationID: "449ead1e-03fa-4ae2-a06d-5222c40868e1",
+  region: "us-south",
+  serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
+  onLoad: function(instance) { instance.render(); }
+      };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
   });
 </script>
 

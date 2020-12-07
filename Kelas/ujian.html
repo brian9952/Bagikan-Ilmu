@@ -18,19 +18,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script>
-        window.watsonAssistantChatOptions = {
-          integrationID: "449ead1e-03fa-4ae2-a06d-5222c40868e1",
-          region: "us-south",
-          serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
-          onLoad: function(instance) { instance.render(); }
-              };
-          setTimeout(function(){
-            const t=document.createElement('script');
-            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-            document.head.appendChild(t);
-          });
-        </script>
     </head>
 
 <body>
@@ -43,11 +30,11 @@
 
         <nav>
            <ul class="nav list-group">
-            <P> Load Balancing </p>
-            <li ><a href="#1"></i> <em> Konsep Docker</em></a></li>
-            <li ><a href="#2"></i> <em> Konsep Kubernetes</em></a></li>
-            <li><a href="#3"></i> <em>Apa itu Server</em></a></li>
-            <li><a href="#4"></i> <em>Apa itu Clustering</em></a></li>
+            <P> Ujian Kelas </p>
+            <li ><a href="#1"></i> <em> Soal 1 </em></a></li>
+            <li><a href="#2"></i> <em> Soal 2</em></a></li>
+            <li><a href="#3"></i> <em> Soal 3</em></a></li>
+            <li><a href="#4"></i> <em> Soal 4 </em></a></li>
             <li><a href="#5"></i> <em>Konsep Cluster</em></a></li>
             <li><a href="#6"></i> <em> Mengimplementasikan docker </em></a></li>
             <li><a href="#7"></i> <em> Mengimplementasikan Kubernetes </em></a></li>
@@ -61,19 +48,19 @@
           <div class="slide" id="1">
             <div class="content first-content">
               <div class="container-fluid">
-                  <div class="col-md-3">
-                      <div class="author-image"><img src="img/felix.jpg" alt="Author Image"></div>
-                      <p> _ </p>
-                      <p style="margin-top:-20px;"> Felix Filipi </p>
-                      <p style="margin-top:-25px;"> Developer </p>
-                  </div>
-
                   <div class="col-md-9">
-                      <h2>Apa itu Docker</h2>
-                      <p>Docker adalah platform perangkat lunak yang memungkinkan Anda membuat, menguji, dan menerapkan aplikasi dengan cepat. Docker mengemas perangkat lunak ke dalam unit standar yang disebut kontainer yang memiliki semua yang diperlukan perangkat lunak agar dapat berfungsi termasuk pustaka, alat sistem, kode, dan waktu proses. Dengan menggunakan Docker, Anda dapat dengan cepat menerapkan dan menskalakan aplikasi ke lingkungan apa pun dan yakin bahwa kode Anda akan berjalan.
-                        <p>Menjalankan Docker di AWS memberi pengembang dan admin cara yang sangat andal dan murah untuk membuat, mengirim, dan menjalankan aplikasi terdistribusi dalam segala skala.
-                          <p>Pengumuman terbaru: Docker berkolaborasi dengan AWS untuk membantu pengembang mempercepat pengiriman aplikasi modern ke cloud. Kolaborasi ini membantu pengembang menggunakan Docker Compose dan Docker Desktop untuk memanfaatkan alur kerja yang sama dengan yang digunakan saat ini untuk menerapkan aplikasi di Amazon ECS dan AWS Fargate dengan mulus. Baca blog untuk informasi selengkapnya.<br><br>
+                     <p style="font-size:30px"> Apa itu Docker? </p>
 
+                  <form style="margin-top:50px;color:#fff; margin-bottom:50px">
+                    <input type="radio" name="jawaban">
+                    <label>Docker adalah makanan</label><br>
+                    <input type="radio" name="jawaban">
+                    <label>Docker adalah makanan</label><br>
+                    <input type="radio" name="jawaban">
+                    <label>Docker adalah makanan</label><br>
+                    <input type="radio" name="jawaban">
+                    <label>Docker adalah makanan</label><br>
+                  </form>
                   </div>
               </div>
               <div class="main-btn"><a href="#2">Materi Selanjutnya.</a></div>
@@ -164,7 +151,12 @@
                 <div class="container-fluid">
                     <div class="col-md-6">
                         <div id="map">
-
+    <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	-->
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -339,19 +331,7 @@ Pengumuman terbaru: Docker berkolaborasi dengan AWS untuk membantu pengembang me
     $(document).ready(function() {
 
 
-      <script>
-      window.watsonAssistantChatOptions = {
-        integrationID: "449ead1e-03fa-4ae2-a06d-5222c40868e1",
-        region: "us-south",
-        serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
-        onLoad: function(instance) { instance.render(); }
-            };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-          document.head.appendChild(t);
-        });
-      </script>
+
         // navigation click actions
         $('.scroll-link').on('click', function(event){
             event.preventDefault();
