@@ -7,11 +7,11 @@ Licensed under MIT License
 
 Team:
 
-Febrian Nugroho (...) Github
+Febrian Nugroho
 
-Felix Filipi (...) Github
+Felix Filipi 
 
-Yutaro Tanaka (...) Github
+Yutaro Tanaka 
 
 
 
